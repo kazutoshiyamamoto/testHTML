@@ -12,6 +12,7 @@
 		FD3476C721873DFD0039F889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3476C521873DFD0039F889 /* Main.storyboard */; };
 		FD3476C921873DFF0039F889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3476C821873DFF0039F889 /* Assets.xcassets */; };
 		FD3476CC21873DFF0039F889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3476CA21873DFF0039F889 /* LaunchScreen.storyboard */; };
+		FD7E59D221888694002966A5 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7E59D121888694002966A5 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FD3476C821873DFF0039F889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3476CB21873DFF0039F889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD3476CD21873DFF0039F889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7E59D121888694002966A5 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				FD3476C121873DFD0039F889 /* AppDelegate.swift */,
 				FD3476C321873DFD0039F889 /* ViewController.swift */,
+				FD7E59D121888694002966A5 /* ViewController2.swift */,
 				FD3476C521873DFD0039F889 /* Main.storyboard */,
 				FD3476C821873DFF0039F889 /* Assets.xcassets */,
 				FD3476CA21873DFF0039F889 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				FD3476C421873DFD0039F889 /* ViewController.swift in Sources */,
 				FD3476C221873DFD0039F889 /* AppDelegate.swift in Sources */,
+				FD7E59D221888694002966A5 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
