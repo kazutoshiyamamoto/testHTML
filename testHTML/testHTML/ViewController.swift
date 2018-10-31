@@ -1,7 +1,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKNavigationDelegate {
+class ViewController: UIViewController {
     
     var webView: WKWebView!
     var loadString: String = "<html><head><meta name=\"viewport\" content=\"width=device-width, user-scalable=no, shrink-to-fit=no\"></head><body>テスト</body></html>"
@@ -59,5 +59,11 @@ extension ViewController: WKUIDelegate {
             webView.load(navigationAction.request)
         }
         return nil
+    }
+}
+
+extension ViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        <#code#>
     }
 }
