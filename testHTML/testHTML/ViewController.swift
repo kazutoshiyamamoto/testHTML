@@ -4,7 +4,7 @@ import WebKit
 class ViewController: UIViewController {
     
     var webView: WKWebView!
-    var loadString: String = "<html><head><meta name=\"viewport\" content=\"width=device-width, user-scalable=no, shrink-to-fit=no\"></head><body>テスト</body></html>"
+    var loadString: String = "{ここにHTMLが入る}"
     
     override func loadView() {
         super.loadView()
@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.webView.uiDelegate = self
-        self.webView.navigationDelegate = self
         
+        // HTMLを読み込む
         self.webView.loadHTMLString(loadString,baseURL: nil)
         
         // スワイプで画面遷移できるようにする
@@ -59,11 +59,5 @@ extension ViewController: WKUIDelegate {
             webView.load(navigationAction.request)
         }
         return nil
-    }
-}
-
-extension ViewController: WKNavigationDelegate {
-    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
-        <#code#>
     }
 }
